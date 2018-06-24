@@ -1,0 +1,10 @@
+<div class="container">
+  <h2 class="page-header">Profile </h2>
+  <div class="loading" *ngIf="isLoading">Loading&#8230;</div>
+  <ul class="list-group">
+    <li class="list-group-item">
+      UserName : {{user.username}}
+    </li>
+    <li class="list-group-item">Email : {{user.email}}</li>
+  </ul>
+</div>

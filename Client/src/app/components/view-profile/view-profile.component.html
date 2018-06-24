@@ -1,0 +1,49 @@
+<app-admin-navbar>
+</app-admin-navbar>
+
+<div>
+  <div style="margin:1%" class="">
+      <button class="btn" (click)="backClicked()">Back</button>
+
+  </div>
+  <div style="margin-top:5%" class="row dashBoardCard">
+    <div class="col s4 m4" *ngIf="profileInfo.UID">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">UID</span>
+          <p>Name : {{profileInfo.UID.fullName}}</p>
+          <p>ID : {{profileInfo.UID.id}}</p>
+          <p>Address: {{profileInfo.UID.address}}</p>
+          <p>Date of Birth: {{profileInfo.UID.DOB | date}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s4 m4" *ngIf="profileInfo.passport">
+      <div class="card blue-grey darken-1">
+
+
+        <div class="card-content white-text">
+          <span class="card-title">Passport</span>
+          <p>Name : {{profileInfo.passport.fullName}}</p>
+          <p>ID : {{profileInfo.passport.id}}</p>
+          <p>Address: {{profileInfo.passport.address}}</p>
+          <p>Date of Birth: {{profileInfo.passport.DOB | date}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s4 m4" *ngIf="profileInfo.PanCard">
+      <div class="card blue-grey darken-1">
+
+        <div class="card-content white-text">
+          <span class="card-title">PanCard</span>
+          <p>Name : {{profileInfo.PanCard.fullName}}</p>
+          <p>ID : {{profileInfo.PanCard.id}}</p>
+          <p>Address: {{profileInfo.PanCard.address}}</p>
+          <p>Date of Birth: {{profileInfo.PanCard.DOB | date}}</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>

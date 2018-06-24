@@ -1,0 +1,9 @@
+.logincard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 450px;
+  max-height: 1000px;
+  height: 600px;
+  padding: 80px;
+  margin: auto;
+  text-align: center;
+}
