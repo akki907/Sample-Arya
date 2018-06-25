@@ -4,8 +4,9 @@
   "description": "blog",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "nodemon server.js",
+    "client":"npm start --prefix Client",
+    "client-install": "npm install --prefix Client"
   },
   "author": "akash",
   "license": "ISC",
